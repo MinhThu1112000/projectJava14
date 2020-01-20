@@ -1,0 +1,12 @@
+0	ADMINCustomer	Admin 	adminCustomer2K0@	admin2k@gmail.com	0888140400	14/04/2000	Ha Tinh 	2020/01/21 01:28:54	null	Nam	1	0	
+1	minhthu	Pham Minh Thu 	minhthu2K0@	minhthutb111@gmail.com	0362989028	01/11/2000	Thai Binh 	2020/01/21 00:20:03	null	Nu	1	0	
+2	phuongthao	Pham Phuong Thao 	phuongthao2K@	phuongthao@gmail.com	09541254124	30/03/2000	Thai Binh 	10/06/2019	10/07/2019	Nu	0	0	
+3	lanvutambiet	Vu Thi Lan 	lanvu2K@	lanvu@gmail.com	0845124456	26/06/2000	Thai Binh 	21/01/2020 00:23:10	2020/01/21	Nu	0	0	
+4	hoangPhong	Hoang Trung Phong 	hoangPhong2k0@	hoangphong@gmail.com	0888140400	14/04/2000	Ha Tinh 	21/01/2020 02:01:31	null	Nam	1	0	
+5	xuanTruong	Tran Xuan Truong 	xuanTruong2k@	xuantruong@gmail.com	0945125421	08/08/2000	Hung Yen 	10/08/2009	10/09/2009	Nam	0	0	
+6	CaoCuong	Ngo Cuong 	ngoCuong12@	ngocuong@gmail.com	08142546146	28/10/2000	Dak Lak 	21/01/2020 02:28:31	null	Nam	1	0	
+7	hoangphong	Hoang Hai Long 	hoangLongHai23@	hoangLong@gmail.com	08751244654	26/04/2000	Hai Duong 	26/11/2009	27/12/2010	Nam	0	0	
+8	maiTuyet	Pham Thi Mai Tuyet 	maiTuyet2K0@	maituyet@gmail.com	0365804290	25/03/2000	Hai Du 	21/01/2020 02:55:57	null	Nu	1	0	
+9	ThuyLinh	Bui Thu Thuy Linh 	thuyLinh2k0@	thuylinh@gmail.com	0879412546	12/04/2000	Quang Ninh 	21/01/2020 02:57:25	null	Nu	1	0	
+10	minhTrang	Pham Thu Trang 	Trangngoc2k@	minhTrang@gmail.com	0362989027	01/12/2000	Hai Phong 	21/01/2020 03:27:19	null	Nu	1	0	
+11	BaoBao	Pham Hoang Bao 	baoLong20@	baobao@gmail.com	0975164647	10/11/2000	Hung Yen 	21/01/2020 03:31:26	null	Nam	1	0	
