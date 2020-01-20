@@ -153,7 +153,7 @@ public class menu {
             System.out.println("|1.               SIGN UP                     |");
             System.out.println("|---------------------------------------------|");
             System.out.println("|2                LOG IN                      |");
-            System.out.println("|-------------------------------------------  |"); 
+            System.out.println("|-------------------------------------------  |");
             System.out.println("|3.               THOAT                       |");
             System.out.println("|---------------------------------------------|");
             System.out.println("Moi ban chon : ");
@@ -167,8 +167,9 @@ public class menu {
                     user = lg.logInAccount(list);
                     break;
                 case 3:
-
                     System.out.println("--------CAM ON QUY KHACH DA SU DUNG SAN PHAM CUA CHUNG TOI------");
+                    deleteCustomer dele = new deleteCustomer();
+                    dele.xoaTaiKhoanSau48H(list);
                     System.exit(0);
             }
 
