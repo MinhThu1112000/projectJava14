@@ -70,7 +70,7 @@ public class checkAccount {
                 newString += string + " ";
             } else {
                 Thread.sleep(150);
-                System.err.println("\tKhông đúng định dạng!");
+                System.err.println("**** Không đúng định dạng!");
                 Thread.sleep(150);
                 return fullName(fullName, infor);
             }

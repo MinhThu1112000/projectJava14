@@ -35,7 +35,7 @@ public class logIn {
             user = sc.nextLine();
             if (!check.checkUser1(user, list)) {
                 Thread.sleep(150);
-                System.err.println("User khong ton tai hoac da bi khoa!");
+                System.err.println("*** User khong ton tai hoac da bi khoa!");
                 Thread.sleep(150);
                 if (menu.dangXuat() == 1) {
                     System.out.println("-------CAM ON QUY KHACH DA SU DUNG PHAN MEM CUA CHUNG TOI------");
