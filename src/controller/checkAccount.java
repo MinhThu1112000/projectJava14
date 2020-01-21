@@ -94,8 +94,10 @@ public class checkAccount {
             j++;
         }
         for (int k = 2; k >= 0; k--) {
-            if (arr2[k] >= arr3[k]) {
+            if (arr2[k] > arr3[k]) {
                 return false;
+            }else{
+                return true;
             }
         }
         return true;
@@ -128,13 +130,24 @@ public class checkAccount {
         }
         return false;
     }
+    public boolean checkUser1(String user, ArrayList<customer> list) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getUserName().equals(user) ) {
+                if(list.get(i).getStatus() == 1){
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 
     public boolean chenhLech(String date1, String date2) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         LocalDateTime dateTime1 = LocalDateTime.parse(date1,formatter);
         LocalDateTime dateTime2 = LocalDateTime.parse(date2, formatter);
         long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).getSeconds();
-        if(diffInMilli > 7200){
+        if(diffInMilli > 172800){
             return true;
         }
         return false;

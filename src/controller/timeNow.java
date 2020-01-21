@@ -15,7 +15,7 @@ import java.time.format.DateTimeFormatter;
 public class timeNow {
 
     public String time() {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         LocalDateTime now = LocalDateTime.now();
         final String start = dtf.format(now);
         return start;

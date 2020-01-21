@@ -33,8 +33,10 @@ public class logIn {
             System.out.println("Moi ban nhap user : ");
             Scanner sc = new Scanner(System.in);
             user = sc.nextLine();
-            if (!check.checkUser(user, list)) {
-                System.out.println("User khong ton tai!");
+            if (!check.checkUser1(user, list)) {
+                Thread.sleep(150);
+                System.err.println("User khong ton tai hoac da bi khoa!");
+                Thread.sleep(150);
                 if (menu.dangXuat() == 1) {
                     System.out.println("-------CAM ON QUY KHACH DA SU DUNG PHAN MEM CUA CHUNG TOI------");
                     k = 0;
@@ -43,20 +45,20 @@ public class logIn {
                 }
             }
 
-        } while (!check.checkUser(user, list) && k == 1);
+        } while (!check.checkUser1(user, list) && k == 1);
         do {
             System.out.println("Moi ban nhap pass : ");
             Scanner sc = new Scanner(System.in);
             pass = sc.nextLine();
             if (!check.checkPassWord(pass, list)) {
                 Thread.sleep(150);
-                System.out.println("**CHU Y : Pass bi sai!Moi nhap lai!");
+                System.err.println("**CHU Y : Pass bi sai!Moi nhap lai!");
                 Thread.sleep(150);
             }
 
         } while (!check.checkPassWord(pass, list));
         System.out.println("-------ĐANG NHAP THANH CONG-------");
-        if (user.equals("ADMINCustomer")) {
+        if (user.contains("ADMINCustomer")) {
             menu.admin(list, user);
         } else {
             menu.menuCustomer(list,user);

@@ -40,7 +40,9 @@ public class menu {
             System.out.println("|-------------------------------------------|");
             System.out.println("|6.       Xoa khach hang bang user          |");
             System.out.println("|-------------------------------------------|");
-            System.out.println("|7.              Dang xuat                  |");
+            System.out.println("|7.   Xem danh sach khach hang con ton tai  |");
+            System.out.println("|-------------------------------------------|");
+            System.out.println("|8.              Dang xuat                  |");
             System.out.println("|-------------------------------------------|");
             System.out.println("Ban chon chuc nang : ");
             Scanner sc = new Scanner(System.in);
@@ -69,6 +71,8 @@ public class menu {
                     dele.deleteCus(list, userDelete);
                     break;
                 case 7:
+                    search.showCustomerExist(list);
+                case 8:
                     System.out.println("------------CAM ON ADMIN-----------");
                     break;
             }
@@ -134,8 +138,11 @@ public class menu {
                 case 1:
                     break;
                 case 2:
+                    System.out.println("--------CAM ON QUY KHACH DA SU DUNG DICH VU-----");
                     System.exit(0);
                     return 1;
+                //break;
+
             }
         } while (choose != 2 && choose != 1);
         return 0;
@@ -144,7 +151,6 @@ public class menu {
     public void existYN(ArrayList<customer> list, String user) throws IOException, InterruptedException {
         signUp sg = new signUp();
         logIn lg = new logIn();
-        sg.readFile("customer.txt", list);
         int choose;
         do {
             System.out.println("|---------------------------------------------|");
@@ -179,8 +185,10 @@ public class menu {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         ArrayList<customer> list = new ArrayList();
+        signUp sg = new signUp();
         String user = "";
         menu menu = new menu();
+        sg.readFile("customer.txt", list);
         menu.existYN(list, user);
 
     }

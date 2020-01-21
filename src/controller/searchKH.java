@@ -40,7 +40,7 @@ public class searchKH {
             System.out.println("| ID |          TEN KHACH HANG        |         SDT          |             EMAIL                |   POINTS |       Que quan    |");
             System.out.println("|----|--------------------------------|----------------------|----------------------------------|----------|-------------------|");
             for (int i = 0; i < list.size(); i++) {
-                if (list.get(i).getEmail().contains(email) == true) {
+                if (list.get(i).getEmail().contains(email) == true && !list.get(i).getUserName().equals("ADMINCustomer")) {
                     kh.showInfor(list.get(i));
                 }
             }
@@ -63,7 +63,7 @@ public class searchKH {
             System.out.println("| ID |          TEN KHACH HANG        |         SDT          |             EMAIL                |   POINTS |       Que quan    |");
             System.out.println("|----|--------------------------------|----------------------|----------------------------------|----------|-------------------|");
             for (int i = 0; i < list.size(); i++) {
-                if (phone.equals(list.get(i).getPhoneNumber())) {
+                if (phone.equals(list.get(i).getPhoneNumber()) && !list.get(i).getUserName().equals("ADMINCustomer")) {
                     kh.showInfor(list.get(i));
                 }
             }
@@ -86,7 +86,7 @@ public class searchKH {
             System.out.println("|----|--------------------------------|----------------------|----------------------------------|----------|-------------------|");
             for (int i = 0; i < list.size(); i++) {
 
-                if (list.get(i).getAddress().contains(address)) {
+                if (list.get(i).getAddress().contains(address) && !list.get(i).getUserName().equals("ADMINCustomer")) {
                     kh.showInfor(list.get(i));
                 }
             }
@@ -110,5 +110,23 @@ public class searchKH {
         }
         return cus;
 
+    }
+
+    public void showCustomerExist(ArrayList<customer> list) {
+        listKH kh  = new listKH();
+        if (list.size() == 1) {
+            System.out.println("=======<< DANH SACH TRONG! KHONG CO KHACH HANG NAO >>=======");
+        } else {
+            System.out.println("|----|--------------------------------|----------------------|----------------------------------|----------|-------------------|");
+            System.out.println("| ID |          TEN KHACH HANG        |         SDT          |             EMAIL                |   POINTS |       Que quan    |");
+            System.out.println("|----|--------------------------------|----------------------|----------------------------------|----------|-------------------|");
+            for (int i = 0; i < list.size(); i++) {
+
+                if (list.get(i).getStatus() == 1 && !list.get(i).getUserName().equals("ADMINCustomer")) {
+                    kh.showInfor(list.get(i));
+                }
+            }
+            System.out.println("|----|--------------------------------|----------------------|----------------------------------|----------|-------------------|");
+        }
     }
 }

@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import model.customer;
+import view.menu;
 import view.signUp;
 
 /**
@@ -17,15 +18,18 @@ import view.signUp;
  */
 public class deleteCustomer {
 
-    public void deleteCus(ArrayList<customer> list, String user) throws IOException {
+    public void deleteCus(ArrayList<customer> list, String user) throws IOException, InterruptedException {
         checkAccount check = new checkAccount();
         searchKH search = new searchKH();
         timeNow time = new timeNow();
+        menu menu = new menu();
         customer cus;
         signUp sg = new signUp();
         Scanner sc = new Scanner(System.in);
-        if (!check.checkUser(user, list)) {
-            System.out.println("Khong tim thay user de xoa!");
+        if (!check.checkUser1(user, list)) {
+            Thread.sleep(150);
+            System.err.println("*** Khong tim thay user de xoa hoac tai khoan da bi khoa!");
+            Thread.sleep(150);
         } else {
             cus = search.showCustomer(list, user);
             int choose;
@@ -42,6 +46,7 @@ public class deleteCustomer {
                         sg.writeFile("customer.txt", list);
                         break;
                     case 2:
+                        menu.admin(list, "ADMINCustomer");
                         break;
                 }
             } while (choose != 2 && choose != 1);
@@ -55,7 +60,7 @@ public class deleteCustomer {
         signUp sg = new signUp();
         String timeDate = time.timeFinal1();
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).getUserName().equals("ADMINCustomer")) {
+            if (!list.get(i).getUserName().contains("ADMINCustomer")) {
                 if (list.get(i).getStatus() == 1) {
                     if (check.chenhLech(list.get(i).getStartDate(), timeDate)) {
                         final String end = timeDate;
