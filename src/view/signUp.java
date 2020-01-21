@@ -194,7 +194,7 @@ public class signUp {
             startDate = start;
             cus.setStartDate(startDate);
         }
-        System.out.println("<<   THANH CONG   >>");
+        //System.out.println("<<   THANH CONG   >>");
         list.add(cus);
         writeFile("customer.txt", list);
         System.out.println("*****----------DANG KY TAI KHOAN THANH CONG--------*****");

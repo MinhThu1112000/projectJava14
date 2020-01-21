@@ -48,20 +48,25 @@ public class deleteCustomer {
 
         }
     }
-    public void xoaTaiKhoanSau48H(ArrayList<customer> list) throws IOException{
+
+    public void xoaTaiKhoanSau48H(ArrayList<customer> list) throws IOException {
         checkAccount check = new checkAccount();
         timeNow time = new timeNow();
         signUp sg = new signUp();
         String timeDate = time.timeFinal1();
-        for( int i = 0; i < list.size(); i++){
-            if(check.checkEndStart(list.get(i).getStartDate(),timeDate) && list.get(i).getStatus() == 1){
-                final String end = timeDate;
-                list.get(i).setStatus(0);
-                list.get(i).setEndDate(end); 
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getUserName().equals("ADMINCustomer")) {
+                if (list.get(i).getStatus() == 1) {
+                    if (check.chenhLech(list.get(i).getStartDate(), timeDate)) {
+                        final String end = timeDate;
+                        list.get(i).setStatus(0);
+                        list.get(i).setEndDate(end);
+                    }
+                }
             }
         }
         sg.writeFile("customer.txt", list);
-        
+
     }
 
 }

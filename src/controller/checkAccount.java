@@ -130,10 +130,10 @@ public class checkAccount {
     }
 
     public boolean chenhLech(String date1, String date2) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         LocalDateTime dateTime1 = LocalDateTime.parse(date1,formatter);
         LocalDateTime dateTime2 = LocalDateTime.parse(date2, formatter);
-        long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).toMillis();
+        long diffInMilli = java.time.Duration.between(dateTime1, dateTime2).getSeconds();
         if(diffInMilli > 7200){
             return true;
         }
