@@ -46,7 +46,11 @@ public class deleteCustomer {
                         sg.writeFile("customer.txt", list);
                         break;
                     case 2:
-                        menu.admin(list, "ADMINCustomer");
+                        //String name = "ADMINCustomer";
+                        if (user.contains("ADMINCustomer")) {
+                            menu.admin(list, user);
+                        }
+
                         break;
                 }
             } while (choose != 2 && choose != 1);

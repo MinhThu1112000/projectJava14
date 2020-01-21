@@ -79,6 +79,7 @@ public class checkAccount {
     }
 
     public boolean checkEndStart(String start, String end) {
+        boolean z ;
         String[] arr = start.split("/");
         String[] arr1 = end.split("/");
         int[] arr2 = new int[3];
@@ -96,11 +97,16 @@ public class checkAccount {
         for (int k = 2; k >= 0; k--) {
             if (arr2[k] > arr3[k]) {
                 return false;
+            }else if(arr2[k] == arr3[k]){
+                z = true;
             }else{
-                return true;
+                z = true;
             }
         }
+        if(z = true) return true;
+       
         return true;
+        
 
     }
 

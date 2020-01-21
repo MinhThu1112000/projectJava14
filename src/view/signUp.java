@@ -153,7 +153,7 @@ public class signUp {
         cus.setEmail(email);
         System.out.println("<<   THANH CONG   >>");
         //Nhap ngay sinh//
-        dateOfBirth = check.account("^[0-3]{1}[0-9]{1}/[0-9]{1,2}/[0-9]{4}$", dateOfBirth, "date of birth", "Ngay sinh phai dung (dd/MM/YYYY)");
+        dateOfBirth = check.account("^[0-3]{1}[0-9]{1}/[0,1]{1}[0-9]{1}/[0-9]{4}$", dateOfBirth, "date of birth", "Ngay sinh phai dung (dd/MM/YYYY)");
         cus.setDateOfBirth(dateOfBirth);
         System.out.println("<<   THANH CONG   >>");
         //Nhap dia chi//
@@ -177,10 +177,10 @@ public class signUp {
         System.out.println("<<   THANH CONG   >>");
         if (status == 0) {
             //Nhap ngay bat dau lap tai khoan//
-            startDate = check.account("^[0-3]{1}[0-9]{1}/[0-9]{1,2}/[0-9]{4}$", startDate, "Ngay bat dau hoat dong", "dinh dang dd/MM/YYYY");
+            startDate = check.account("^[0-3]{1}[0-9]{1}/[0,1]{1}[0-9]{1}/[0-9]{4}$", startDate, "Ngay bat dau hoat dong", "dinh dang dd/MM/YYYY");
             cus.setStartDate(startDate);
             do {
-                endDate = check.account("^[0-3]{1}[0-9]{1}/[0-9]{1,2}/[0-9]{4}$", startDate, "Ngay ket thuc hoat dong", "dinh dang dd/MM/YYYY");
+                endDate = check.account("^[0-3]{1}[0-9]{1}/[0,1]{1}[0-9]{1}/[0-9]{4}$", startDate, "Ngay ket thuc hoat dong", "dinh dang dd/MM/YYYY");
                 if (!check.checkEndStart(startDate, endDate)) {
                     Thread.sleep(150);
                     System.err.println("Nhap khong dung ( Ngay ket thuc be hon ngay bat dau)");
