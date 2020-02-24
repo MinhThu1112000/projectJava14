@@ -110,9 +110,9 @@ public class checkAccount {
 
     }
 
-    public boolean checkID(String ID, ArrayList<customer> list) {
+    public boolean checkID(int ID, ArrayList<customer> list) {
         for (int i = 0; i < list.size(); i++) {
-            if (ID.equals(list.get(i).getID())) {
+            if (ID == list.get(i).getID()) {
                 return false;
             }
         }

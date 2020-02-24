@@ -11,7 +11,7 @@ package model;
  */
 public class user {
 
-    private String ID;
+    private int ID;
     private String userName;
     private String fullName;
     private String phoneNumber;
@@ -27,29 +27,14 @@ public class user {
     public user() {
     }
 
-    public user(String ID, String userName, String fullName, String phoneNumber, String email, String dateOfBirth, String address, String sex, String startDate, String endDate, int points, int status) {
-        this.ID = ID;
-        this.userName = userName;
-        this.fullName = fullName;
-        this.phoneNumber = phoneNumber;
-        this.email = email;
-        this.dateOfBirth = dateOfBirth;
-        this.address = address;
-        this.sex = sex;
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.points = points;
-        this.status = status;
-    }
-    
-
-    public String getID() {
+    public int getID() {
         return ID;
     }
 
-    public void setID(String ID) {
+    public void setID(int ID) {
         this.ID = ID;
     }
+
 
     public String getUserName() {
         return userName;

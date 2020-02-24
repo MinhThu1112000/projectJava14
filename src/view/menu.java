@@ -72,6 +72,7 @@ public class menu {
                     break;
                 case 7:
                     search.showCustomerExist(list);
+                    break;
                 case 8:
                     System.out.println("------------CAM ON ADMIN-----------");
                     break;

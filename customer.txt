@@ -1,5 +1,4 @@
-admin1	ADMINCustomer	Pham Thi Minh Thu 	minhthu2K0@	minhthutb111@gmail.com	0362989028	01/11/2000	Thai Binh 	22/01/2020 03:29:23	null	Nu	1	0	
-kh01	hoangphong	Hoang Trung Phong 	hoangphong2K0@	hoangphong@gmail.com	0888140400	14/04/2000	Ha Tinh 	10/11/2009	11/12/2010	Nam	0	0	
-kh02	xuantruong	Tran Xuan Truong 	xuantruong2K0@	xuantruong@gmail.com	09841254214	08/08/2000	Hung Yen 	10/08/2000	10/09/2000	Nam	0	0	
-kh03	phuongthao	Pham Thi Phuong Thao 	phuongthao2K0@	phuongthao@gmail.com	09784135646	30/03/2000	Thai Binh 	10/09/2009	15/12/2010	Nu	0	0	
-kh04	caocuong	Nguyen Ngo Cao Cuong 	caocuong2K0@	caocuong@gmail.com	0547871264	28/11/2000	Dak Lak 	22/01/2020 03:40:42	null	Nam	1	0	
+4	minhthu	Pham Minh Thu 	minhthu2K0@	minhthutb111@gmail.com	0362989028	01/11/2000	Thai Binh 	24/02/2020 10:18:15	null	Nu	1	0	
+143	ADMINCustomer	Admin 	admin2K0@@	admin@gmail.com	0965096315	08/10/1995	Thai Binh 	24/02/2020 10:19:18	null	Nu	1	0	
+38	hoangphong	Hoang Trung Phong 	hoangphong2K0@	hoangphong@gmail.com	0888140400	14/04/2000	Ha Tinh 	24/02/2020 10:20:06	null	Nam	1	0	
+173	maituyet	Pham Mai Tuyet 	maituyet2K0@	maituyet@gmail.com	08421554135	25/03/2000	Hai Duong 	24/02/2020 10:21:03	null	Nu	1	0	
