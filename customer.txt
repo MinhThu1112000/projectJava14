@@ -1,4 +1,3 @@
 4	minhthu	Pham Minh Thu 	minhthu2K0@	minhthutb111@gmail.com	0362989028	01/11/2000	Thai Binh 	24/02/2020 10:18:15	null	Nu	1	0	
 143	ADMINCustomer	Admin 	admin2K0@@	admin@gmail.com	0965096315	08/10/1995	Thai Binh 	24/02/2020 10:19:18	null	Nu	1	0	
-38	hoangphong	Hoang Trung Phong 	hoangphong2K0@	hoangphong@gmail.com	0888140400	14/04/2000	Ha Tinh 	24/02/2020 10:20:06	null	Nam	1	0	
 173	maituyet	Pham Mai Tuyet 	maituyet2K0@	maituyet@gmail.com	08421554135	25/03/2000	Hai Duong 	24/02/2020 10:21:03	null	Nu	1	0	
